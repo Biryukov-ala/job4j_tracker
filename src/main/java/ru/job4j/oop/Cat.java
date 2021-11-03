@@ -7,7 +7,8 @@ public class Cat {
     public void showFood() {
         System.out.println(this.food);
     }
-    public void showName(){
+
+    public void showName() {
         System.out.println(this.name);
         }
 
@@ -15,7 +16,7 @@ public class Cat {
         this.food = meat;
     }
 
-    public void giveNick(String nick){
+    public void giveNick(String nick) {
         this.name = nick;
     }
 
