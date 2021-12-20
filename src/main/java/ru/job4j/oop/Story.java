@@ -8,6 +8,5 @@ public class Story {
         Wolf wolf = new Wolf();
         girl.help(petya);
         petya.kill(wolf);
-
     }
 }
