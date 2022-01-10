@@ -5,11 +5,11 @@ public class Item {
 
     private String name;
 
-    public Item () {
+    public Item() {
 
     }
 
-    public Item(String name,int id) {
+    public Item(String name, int id) {
         this.name = name;
         this.id = id;
     }
@@ -18,13 +18,13 @@ public class Item {
         this.name = name;
     }
 
-   public void printItem() {
+    public void printItem() {
         System.out.println("ID: " + id);
         System.out.println("Name: " + name);
     }
 
     public static void main(String[] args) {
-        Item first = new Item("Alex",2305);
+        Item first = new Item("Alex", 2305);
         first.printItem();
-    }
+        }
 }
