@@ -18,13 +18,29 @@ public class Item {
         this.name = name;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void printItem() {
         System.out.println("ID: " + id);
         System.out.println("Name: " + name);
     }
 
     public static void main(String[] args) {
-        Item first = new Item("Alexandder", 2305);
+        Item first = new Item("Alexander", 2305);
         first.printItem();
         }
 }
