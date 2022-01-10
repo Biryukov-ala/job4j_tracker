@@ -24,7 +24,7 @@ public class Item {
     }
 
     public static void main(String[] args) {
-        Item first = new Item("Alex", 2305);
+        Item first = new Item("Alexandder", 2305);
         first.printItem();
         }
 }
