@@ -8,6 +8,10 @@ public class Profession {
     private String birthday;
 
     public Profession() {
+
+    }
+
+    public Profession(String name, String surname, String education, String birthday) {
     }
 
     public String getName() {
@@ -29,5 +33,4 @@ public class Profession {
         this.birthday = birthday;
         return birthday;
     }
-
 }
