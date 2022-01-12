@@ -14,6 +14,17 @@ public class Computer {
             this.cpu = cpu;
         }
 
+        public Computer(int ssd, String cpu) {
+            this.ssd = ssd;
+            this.cpu = cpu;
+        }
+
+        public Computer(boolean multiMonitor, double ssd, String cpu) {
+        this.multiMonitor = multiMonitor;
+        this.ssd = (int) ssd;
+        this.cpu = cpu;
+        }
+
         public Computer() {
 
         }
@@ -28,5 +39,11 @@ public class Computer {
             Computer computer = new Computer(true, 500, "Intel Core I7-10700K");
             Computer third = new Computer();
             computer.printInfo();
+            System.out.println();
+            Computer fourth = new Computer(256, "AMD Ryzen 5 3600");
+            fourth.printInfo();
+            System.out.println();
+            Computer fifth = new Computer(true, 512.0, "AMD Ryzen 7 3700X");
+            fifth.printInfo();
         }
 }
