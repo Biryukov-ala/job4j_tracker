@@ -17,7 +17,7 @@ public class Library {
         }
         System.out.println("Replace detective to programming.");
         Book prog = new Book("Clean code", 1);
-        Book detect = new Book ("Holmes",11);
+        Book detect = new Book("Holmes", 11);
         books[0] = prog;
         books[3] = detect;
         for (int index = 0; index < books.length; index++) {
