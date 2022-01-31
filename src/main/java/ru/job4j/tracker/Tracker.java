@@ -37,10 +37,8 @@ public class Tracker {
         int index = indexOf(id);
         if (index != -1) {
             items[index] = null;
-            int start = index + 1;
             int distPos = index;
-            int countCopy = size - index;
-            System.arraycopy(items, start, items, distPos, countCopy);
+            System.arraycopy(items, index + 1, items, distPos, size - index - 1);
             items[size - 1] = null;
             size--;
         }
