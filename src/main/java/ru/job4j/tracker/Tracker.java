@@ -33,6 +33,20 @@ public class Tracker {
         return true;
     }
 
+    public boolean delete(int id) {
+        int index = indexOf(id);
+        if (index != -1) {
+            items[index] = null;
+            int start = index + 1;
+            int distPos = index;
+            int countCopy = size - index;
+            System.arraycopy(items, start, items, distPos, countCopy);
+            items[size - 1] = null;
+            size--;
+        }
+        return index != -1;
+    }
+
     public Item findById(int id) {
         int index = indexOf(id);
         return index != -1 ? items[index] : null;
