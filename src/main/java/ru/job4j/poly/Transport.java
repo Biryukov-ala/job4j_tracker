@@ -4,7 +4,7 @@ public interface Transport {
 
     void go();
 
-    String passengers(String passengers);
+    void passengers(String passengers);
 
     String fuel(String fuel);
 }
