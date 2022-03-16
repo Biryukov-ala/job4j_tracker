@@ -24,13 +24,12 @@ public class StartUITest {
     @Test
     public void whenReplaceItem() {
         Tracker tracker = new Tracker();
-        Item item = tracker.add(new Item("New item name"));
+        Item item = tracker.add(new Item("Replaced item"));
         String replacedName = "New item name";
         Input in = new StubInput(
-                new String[] {"0", "item name", "1", "2", "New item name", "2"}
+                new String[] {"0", String.valueOf(item.getId()), replacedName, "1"}
         );
         UserAction[] actions = {
-                new CreateAction(),
                 new EditAction(),
                 new ExitAction()
         };
@@ -43,10 +42,10 @@ public class StartUITest {
         Tracker tracker = new Tracker();
         Item item = tracker.add(new Item("Item name"));
         Input in = new StubInput(
-                new String[] {"0", "Item name", "1", "1", "2"}
+                new String[] {"0",String.valueOf(item.getId()), "1"}
         );
+
         UserAction[] actions = {
-                new CreateAction(),
                 new DeleteAction(),
                 new ExitAction()
         };
